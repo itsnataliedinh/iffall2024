@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(125, 255, 0);
+
+    H1{
+        font-size: 3.75rem; 
+        line-height: 3rem;
+        margin-top: 4rem;
+        text-align: center;
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:rgb(0, 0, 0)
+    }
+
+    H2{
+        font-size: 1.5rem; 
+        line-height: 0rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color:rgb(0, 0, 0)
+    }
+  
+     p {                           
+        margin-left: auto;     
+        margin-right: auto; /* Line 29 and 30 centers paragraph on page!!*/ 
+        text-align: left;   /* use this to align text!!!*/ 
+        width: 26.5%;
+        font-size:1.2rem;
+        line-height: 0.75rem;
+
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 350;
+        font-style: normal;
+        color:rgb(52, 52, 52)
+        }
+
+    .fade{
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        color:rgb(77, 108, 82)
+    }
+
+    .thin{
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color:rgb(77, 108, 82)
+    }
+    
+    .stanza{
+        margin-top: 2rem;
+    }
+    #bubble{ 
+        margin-top: 5rem;
+        background-color: rgb(156, 185, 142);
+        border-radius: 10px 10px 10px 10px; 
+
+        width: 25%;
+        height: auto;
+        max-width: 900px;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
