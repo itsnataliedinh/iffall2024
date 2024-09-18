@@ -2,7 +2,7 @@ html{
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 22px;
-    margin-left: 5rem;
+    margin-left: 15rem;
     margin-top: 3rem;
 }
 
@@ -19,6 +19,7 @@ h1{
     font-size: 50px;
     line-height: 1.2;
     margin-bottom: 0.6rem;
+    color:rgb(108, 0, 74)
 }
 
 section{
@@ -27,22 +28,22 @@ section{
 
 h4{
     margin-top: 3rem;
-    font-size: 29px;
+    font-size: 28px;
     font-weight:650;
-    color:rgb(82, 82, 82);
-    line-height: 0.7rem;
+    color:rgb(120, 120, 120);
+    line-height: 1.2rem;
 }
 
 .value{
     font-weight:500;
     font-size: 18px;
-    color:rgb(170, 170, 170);
-    line-height:0.3rem;
+    color:rgb(123, 122, 122);
+    margin-bottom: -0.5rem;
 }
 .quotes{
     text-indent: 1rem;
-    line-height: 1.2rem;
-    margin-bottom:1.3rem;
+    margin-bottom:1.1rem;
+    color:rgb(108, 0, 74)
 }
 
 thin{
