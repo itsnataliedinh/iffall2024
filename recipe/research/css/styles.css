@@ -1,0 +1,109 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.6em;
+}
+
+header{
+    margin-left: 0rem;
+    font-size: 18px;
+}
+
+body{
+    margin-left: 1.75rem;
+    margin-top: 0rem;
+    background-color:rgb(233, 219, 194);
+}
+
+h1{
+    margin-bottom: -0.3rem;
+    color: rgb(165, 76, 2);
+}
+.subhead{
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+#recipe{
+    font-size: 0.45rem;
+    text-indent: 4%;
+    margin-bottom: 0.8rem;
+}
+
+.description{
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    margin-left: 58%;
+    margin-top: -2%;
+    margin-right: 5%;
+    
+}
+
+.RecipeDetails{
+    font-size: 0.3rem;
+    line-height: 0.35rem;
+    margin-left: 58%;
+    margin-top: 4%;
+    margin-right: 3%;
+    
+}
+
+.ingredients{
+    margin-top: 4%;
+    margin-right: 24%;
+    margin-left: 8%;
+    font-size: 0.32rem;
+    line-height: 0.5rem;
+}
+
+h7{
+    font-size: 0.4rem;
+    font-weight: bold; 
+    text-indent: -4rem;
+}
+
+.list{
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+    text-indent: 3em;
+    line-height: 1.4em;
+}
+
+
+.instructions{
+    margin-top: 7%;
+    margin-right: 24%;
+    container: auto;
+    background-color: rgb(249, 238, 225);
+    border-radius: 10px 10px 10px 10px; 
+    padding: 0.8rem;
+    font-size: 0.32rem;
+    line-height: 0.6rem;
+}
+
+h6{
+    font-size: 0.5rem;
+    color: rgb(165, 76, 2);
+}
+#imagery{
+    margin-left: 4%;
+    margin-right: 3%;
+    margin-top: 0.6rem;
+    margin-bottom:1rem;
+    size:0.9em;
+}
+
+.research{
+    margin-top: 0.3rem;
+    margin-left: 4%;
+    margin-right: 26%;
+    container: auto;
+    font-size: 0.35rem;
+    line-height: 0.58rem;
+
+
+}
+.detail{
+    font-size: 0.3rem;
+    line-height: 0%;
+    color:rgb(143, 138, 124)
+}
