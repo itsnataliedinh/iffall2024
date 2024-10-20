@@ -1,0 +1,118 @@
+body{
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+header{
+    text-align: center;
+    padding-top:166px;
+    padding-bottom:188px;
+    background-color: blue;
+    background-image: url('../images/header.jpg');
+    color: rgb(239, 239, 150);
+}
+h1{
+    font-size:80px;
+    margin:0 0 16px 0;
+    line-height: 1;
+}
+h2{
+    font-size:30px;
+    margin:0;
+    line-height: 1;
+}
+section{
+    background-color: rgba(0,0,255,.25);
+    margin: 0 auto;
+}
+section > div{ /*complex selector: selects the direct descender (child) of ONLY this div*/ 
+    margin: 0 auto;
+    width: 960px;
+    padding-top:47px; /*better to add padding to more speciifc box such as div rather than section */ 
+    padding-bottom:47px;
+}
+h3{
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    font-size:40px; 
+}
+p{
+    font-size:18px;
+    line-height:25.5px;
+    /* general rules for all body text then make separate selector for this body copy in section 1.
+     How to select descendent-- section.float p ? */
+}
+section.float{
+    margin: 0;
+    padding-left: 0px;
+    background-color: rgb(22, 86, 66);
+    color: rgb(255, 255, 247);
+}
+.image-float{
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0rem 0rem 1.3rem 2rem;
+}
+
+
+
+section.thumbnail-grid{
+    background-color: aliceblue;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    list-style-type: none;
+    padding-left: 0
+    
+}
+/*Using float within grid*/ 
+li{
+    margin-top: 5px; /*Should I use separate padding and margin-top??*/ 
+    margin-right: 30px;
+
+}
+.grid-float-image{
+    max-width: 200px; 
+    max-height: 150px;
+    float: left;
+    margin: 0rem 0.8rem 0rem 0rem;
+}
+.photo-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.caption{
+    margin-top: 5px;
+}
+
+
+section.summary{
+    background-color: rgb(42, 62, 93);
+    color:rgb(250, 250, 180)
+}
+section.summary div{
+    width: 720px;
+}
+section.summary p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 36px;
+    padding-bottom: 32px;
+}
+
+
+footer{
+    background-color: rgb(86, 86, 86);
+}
+footer div{
+    margin: 0 auto;
+    width: 960px;
+    padding-top:25px; 
+    padding-bottom:25px; 
+    color:aliceblue;
+}
