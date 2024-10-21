@@ -1,0 +1,27 @@
+img { 
+    max-width: 100%; 
+}
+body{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90%;
+    max-width: 40rem; /*overwites width: 90% when needed. Creates shorter line length for reading ease. Uses rem (Relation to base size font overall in page rather than em) */
+    /* When screen is small, uses 90% rule but when screen is large, 40rem is upper-limit. Consider how things grow in scale rather than fixed width */
+}
+html { 
+    font-size: 12pt; 
+}
+@media (min-width: 640px) {
+    html { font-size: 16pt; }
+    /*selectively applies this rule only when screen reached 640px*/ 
+}
+@media (min-width: 640px) {
+    .two-columns-example{
+        display: flex;
+    }
+    .two-columns-example > *{
+        width: 50%;
+    }
+}
+
+/* Use media queries SPARSELY. Create general style rules overall & add media queries only as needed. Keep select style modiciations next to original element as much as possible. Ex: Element X, element X at diff widths. */ 
