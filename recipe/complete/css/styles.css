@@ -1,0 +1,252 @@
+html{
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+
+    max-width: 1200px;
+    margin: auto auto;
+    width: 90%; 
+    border: 2px solid rgb(153, 75, 7);
+}
+/* section :not(:first-child){ -- centers everything besides first section??? --
+    max-width: 1400px; --section will stay at 1400px at screen size of at least 1400px, smaller screens will use 90% rule --
+    margin: auto auto;
+    width: 90%; 
+    
+}*/
+section{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+div.intro{  /* How to set so 1st div has no margins, image bleeds?*/ 
+    width: 100%;
+    margin: 0;
+    background-color: rgb(161, 94, 32);
+    margin-top: 0%;
+    color:beige;
+}
+#opening{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding-left: 0
+    
+}
+.preview{
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    align-items: center;
+}
+.text-col{
+    margin:0 12% 0 6%;
+    p{
+        line-height: 1.6rem;
+    }
+}
+.body-copy{
+   line-height: 1.6rem;
+}
+h1{
+    font-family: "gyst-variable", sans-serif;
+    font-weight:900;
+    font-size: 96px;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    color:rgb(255, 255, 255)
+}
+h2{
+    line-height: 2rem;
+
+}
+#quick-facts{
+    padding-top: 2%;
+    line-height: 2rem;
+}
+
+h3{
+    font-family: "gyst-variable", sans-serif;
+    font-weight:9000;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(138, 76, 5)
+}
+div.ingredients{
+    padding: 0% 0% 0% 0%;
+}
+ul.ingredients-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    padding-left: 0
+}
+.ingredients li{
+    border: 1px solid rgb(153, 75, 7);
+    padding: 3% 5% 6% 8%;
+}
+div.ingredients li p:first-child{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+ul.tips-info{
+    
+    /*   TEST FLEX GRID ?????
+    display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    list-style-type: none;
+    padding-left: 0
+}
+ul.tips-info img{
+    max-width: 100%;
+}
+div.instructions{
+    background-color: rgb(255, 255, 255)    
+
+}
+ul.steps{
+    /*   TEST FLEX GRID ?????
+    display: flex;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    padding-left: 0 
+
+}
+ul.steps li{
+    margin: 10% 2% 0 10%;
+    border-bottom: 1px solid rgb(153, 75, 7);
+    
+}
+ul.steps img{
+    width: 92%; 
+    align-items: center;
+    padding-bottom: 2%;
+}
+.Emphasize{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+div.Storage{
+    background-color: antiquewhite; 
+    padding-top: 3%; 
+    padding-bottom: 5%;
+}
+div.Storage p{
+    width: 50%;
+    margin: 2% auto 2% auto;
+    line-height: 1.6rem;
+}
+footer{
+    margin-bottom: 2%;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media (max-width: 1060px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 831px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .body-copy{
+        font-size: 0.8rem;
+        line-height: 0rem;
+    }
+    #quick-facts{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    h3{
+        font-size: 2.6rem;
+    }
+    .Emphasize{
+        font-size: 1.5rem;
+    }
+    ul.steps li{
+        margin: 6% 2% -10% 6%;
+        border-bottom: 1px solid rgb(153, 75, 7);
+}
+@media (max-width: 770px) {
+    h3{
+        font-size: 2rem;
+    }
+    ul.steps li{
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: -10%;
+    }
+}
+
+}
+@media (max-width: 540px) {
+
+
+  #opening {
+      grid-template-columns: 1fr; 
+      height: 80%;
+    }
+
+    .text-col{
+        margin: 5%;
+    }
+
+    ul.ingredients-table{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        list-style-type: none;
+        padding-bottom: -20%;
+        padding-left: 0
+    }
+  
+   
+    ul.tips-info {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        list-style-type: none;
+        margin-top: 0%;
+    }
+    ul.steps {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        list-style-type: none;
+        margin-top: 0%;
+        margin-bottom: 6%;
+    }
+}
+  
+
+
+
+
+
+  
