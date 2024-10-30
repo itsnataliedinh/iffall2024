@@ -1,0 +1,40 @@
+.static-example .positioned-element{ /* Does NOT mess w/ doc's flow */
+    background-color: green;
+    left: 100px;
+}
+.relative-example .positioned-element{ /*relative example is parent for abolsute*/
+    background-color: blue;
+    position: relative;
+    left: 100px; /*moves FROM the left*/
+    top: 50px; /*top = moves DOWN, opposite*/
+    /*gap still present, object exists & object moved RELATIVELY*/
+
+    z-index: -1; /*acts like layering, positive brighs towards us */
+}
+.absolute-example .positioned-element{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0; /* must need parent to offset */
+    /* when to use th absolute positioning? */
+}
+.absolute-example{
+    position: relative; /* still follow doc's flow */
+    /* set section as parent for positioned element */
+}
+.fixed-example .positioned-element{
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    /* fixed elements removed from doc's flow, atatched to browser. Can make nav */
+}
+.sticky-example .positioned-element{
+    background-color: orange;
+    position: sticky;
+    top: 50px;
+    /* fuctions as mix of relative and fixed */
+    /* position:sticky - parent for an absolute */
+}
