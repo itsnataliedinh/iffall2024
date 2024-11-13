@@ -1,0 +1,23 @@
+body{
+    max-width: 1200px;
+    margin: auto auto;
+}
+img{
+    width:75%;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding-left: 5; 
+
+}
+div{
+    margin-top: 10%;
+}
+.mobile{
+    width:55%;
+}
+p1{
+    line-height: 1rem;
+}
