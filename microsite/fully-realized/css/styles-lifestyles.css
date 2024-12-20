@@ -1,0 +1,189 @@
+html{
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+    max-width: 100%; /* !!! need to make sure all contents fit within max-width*/
+    margin: 0 auto; 
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+    body {
+        max-width: 1800px; 
+        margin: 0 auto;
+    }
+}
+main{
+    margin: 0 auto; /*how to align body in center?? left align rn */ 
+    margin-top: 6em; /*need to make scalable, responsive*/
+
+}
+h3{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+header{
+    display: block;
+    position: fixed; /*is there a way to make it fade out and fade in only during scroll? */ 
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 100%;
+    background-color:#c4a932;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    z-index: 1000;
+
+}
+header h3{
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+a#logo{
+   
+}
+a#logo:hover{
+    font-size: 150%; /*TO DO : add hover effect. increase scale, add van icon? rectangle fill? */
+}
+.Navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 25%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    margin: auto auto;
+    color:#F7FBFF;
+    padding: 1.8% 0% 0% 0%;
+}
+.Navigation li{
+    text-align: left;
+    width: 100%;
+    padding:0px;
+}
+a.nav-btn{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15em;
+
+    display: inline-block;
+	position: relative;
+    padding: 2%;
+	margin:auto;
+	transition: all .2s;
+}
+a.nav-btn:hover{
+    font-weight: 850;
+
+    padding: 6%;
+    background-color: #e9dfcd;
+    border-radius: 10px;
+    color:#543D25
+}
+section{
+    padding: 5% 5% 0% 5%;
+    margin: 0 auto;
+}
+img{
+    border-radius: 45px;
+}
+h1{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 600;
+    font-size: 4.8em;
+    line-height: 1.4em;
+    margin-top: 0%;
+}
+.detail{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 0.4em;
+    color:#c4a932;
+}
+.subtitle{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.2em; 
+}
+p{
+    font-size: 1.15em;
+    line-height: 1.4em;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 2%;
+    max-width: 1400px;
+    margin: 0 auto
+}
+.lifestyles {
+    background-color: #FEFFE8;
+    color: #543D25;
+}
+.lifestyles ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 4em; 
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 15%;
+    margin: 0 auto;
+    margin-top: -2em;
+    max-width: 1400px;
+}
+.lifestyles li {
+    max-width: 100%;
+    padding-top: 10%;
+    text-align: left;
+}
+.lifestyles li img{
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center images */
+    padding-top: 7%;
+    margin-top: 1em;
+    width: 87%;
+    max-width: 600px;  
+}
+#add-frames{
+    border-width: 1px;
+    border-color: #543D25;
+}
+
+footer{
+    position: relative;
+    margin: 0;
+    padding-top: 2%;
+    height:max-content;
+    background-color: #543D25;
+    color: #FEFFE8; 
+}
+.ul-footer{
+    display: grid;
+    columns: 1fr 1fr;
+    margin-left: -10;
+    margin-right: -10;
+}
+#copyright{
+    text-align: left;
+}
+#bylines{
+    text-align: right;
+    line-height: 1.8em;
+}
+
