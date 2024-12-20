@@ -1,0 +1,286 @@
+html{
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+    max-width: 100%; /* !!! need to make sure all contents fit within max-width*/
+    margin: 0 auto; 
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+    body {
+        max-width: 1800px; 
+        margin: 0 auto;
+    }
+}
+main{
+    margin: 0 auto; /*how to align body in center?? left align rn */ 
+    margin-top: 6em; /*need to make scalable, responsive*/
+
+}
+h3{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+header{
+    display: block;
+    position: fixed; /*is there a way to make it fade out and fade in only during scroll? */ 
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 100%;
+    background-color:#c4a932;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    z-index: 1000;
+
+    /* why is there space above header?!--  margin-top: -6em;*/
+
+     /* TO-DO: need to add in navigation !!! */ 
+
+}
+section{
+    padding: 5% 0;
+    margin: 0 auto;
+    /*padding-top: 2%;
+    padding-bottom: 5%;
+    margin: 0;
+    background-color: #FEFFE8; */
+}
+img{
+    border-radius: 45px;
+}
+header h3{
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    /* transform: translate(-50%, -50%); center??? */
+}
+a#logo{
+   
+}
+a#logo:hover{
+    font-size: 150%; /*TO DO : increase scale, add van icon? rectangle fill? */
+}
+.Navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 25%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color:#F7FBFF;
+    padding: 1.8% 0% 0% 0%;
+}
+.Navigation li{
+    text-align: left;
+    width: 100%;
+    padding:0px;
+}
+a.nav-btn{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15em;
+
+    display: inline-block;
+	position: relative;
+    padding: 2%;
+	margin:auto;
+	transition: all .2s;
+}
+a.nav-btn:hover{
+    font-weight: 850;
+
+    padding: 6%;
+    background-color: #e9dfcd;
+    border-radius: 10px;
+    color:#543D25
+}
+
+#opening{
+    /*padding-top: 2%;
+    padding-bottom: 5% 0;*/ 
+    width: 100%;
+    height: 100vh; /*Use Viewport Height (vh) to place full image into screen dimension. Avoids overlap w/ other -- how to make shorter? */   
+    
+    /*image not showing in css??? --- background-image:url("mountains.jpeg") -- added in html instead; */ 
+    background-color: #543D25;
+    position: relative; /* how to set background in place, doesn't reveal white parts on swipe? */
+    margin: 0 0;
+
+    z-index: -1; /* when you siwpe down, shows white bar under header? how to make section background go under header, align top top of document page?/ */
+
+    
+}
+/* #openingul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1200px; 
+    gap: 3em;
+    list-style-type: none;
+} */ 
+h1{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 600;
+    font-size: 6.5em;/*rem or em? */ 
+    line-height: 1.4em;
+    margin-top: -1em;
+   
+}
+#opening h1{  
+    margin-top: 8%;
+    margin-bottom: 3%;
+    padding-left: 18%;
+    position: relative; /*makes text go on top of image-- remove from doc flow?? */ 
+    z-index: 2;
+    color: #FEFFE8;
+}
+#opening .background-image{
+    display: block;
+    margin: auto;
+    margin-top: -2.5em;
+    width: 90%;
+    position: absolute; /*position image behind content, removes from doc flow */  
+    top: 45%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+ 
+    z-index: 1; 
+}
+/* ANIMATE INFINTE SCROLL ??
+.van-animate{
+    position: relative;
+    width: 100vh;
+    height: 85%;
+    overflow: hidden;
+}
+
+.van-icon{
+    position: absolute;
+    bottom: 20%; -- Adjust to place car at a suitable height 
+    left: -10%; -- Start slightly off-screen 
+    font-size: 100px; /* Set the size of the car icon 
+    animation: drive 5s linear infinite; -- Adjust speed and repetition */
+
+/*
+@keyframes drive {
+    0% {
+        left: -10%; -- Start off-screen on the left 
+    }   
+    100% {
+        left: 110%; -- End off-screen on the right 
+    } */ 
+
+#def{
+    padding: 5% 10%; /* Centers text*/
+    text-align: left;
+    background-color: #FEFFE8;
+    font-size: 1.5em
+}
+#def p{
+    width: 75%;
+    line-height: 1.8em;
+    margin:auto;
+    color: #543D25; 
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 2%;
+    max-width: 1400px;
+    margin: 0 auto
+}
+.teasers {
+    background-color:#F7FBFF;
+    color: #543D25;
+}
+.teasers ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 4em; 
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 8%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.teasers li {
+    max-width: 100%;
+    text-align: left;
+}
+.teasers li img{
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center images */
+    width: 100%;
+    max-width: 600px;  
+}
+#end{
+    padding-top: -5%;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.home-end-image{
+    display: block;
+    margin: auto;
+    margin-top: -5%;
+    width: 100%;
+    border-radius: 90px 90px 0px 0px;
+    z-index: -1;
+}
+#hashtag{
+    font-family: "Annie Use Your Telescope", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 5.4em;
+    line-height: 1.15em;
+    color: #35210d;
+
+    position: absolute;
+    top: 15%;
+    right: 15%;  
+    z-index: 2;
+}
+footer{
+    position: relative;
+    margin: 0;
+    padding-top: 2%;
+    /*how to remove extra white space at bottom?? */ 
+    height:max-content;
+    background-color: #543D25;
+    color: #FEFFE8; 
+}
+.ul-footer{
+    display: grid;
+    columns: 1fr 1fr;
+    margin-left: -10;
+    margin-right: -10;
+}
+#copyright{
+    text-align: left;
+}
+#bylines{
+    text-align: right;
+    line-height: 1.8em;
+}
+
+/*position: absolute;
+    top: 25%;
+    right: 5%; 
+    z-index: 2; 
+    line-height: 2em; */ 
