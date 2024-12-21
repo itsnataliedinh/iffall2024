@@ -1,0 +1,629 @@
+html{
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+    max-width: 100%; /* !!! need to make sure all contents fit within max-width*/
+    margin: 0 auto; 
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+main{
+    margin: 0 auto; /*how to align body in center?? left align rn */ 
+    margin-top: 6em; /*need to make scalable, responsive*/
+}
+h3{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+header{
+    display: block;
+    position: fixed; /*is there a way to make it fade out and fade in only during scroll? */ 
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 100%;
+    background-color:#c4a932;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    z-index: 1000;
+
+}
+section{
+    padding: 5% 0%;
+    margin: 0 auto;
+}
+img{
+    border-radius: 45px;
+}
+header h3{
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+.subtitle{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.2em; 
+
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.body-text{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 95%;
+}
+a#logo h3{
+   color: white;
+}
+a#logo h3:hover{
+    font-size: 210%;
+    color:rgb(224, 255, 255)
+}
+.Navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 25%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    margin: auto auto;
+    color:#F7FBFF;
+    padding: 1.8% 0% 0% 0%;
+}
+.Navigation li{
+    text-align: left;
+    width: 100%;
+    padding:0px;
+}
+a.nav-btn{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15em;
+
+    display: inline-block;
+	position: relative;
+    padding: 2%;
+	margin:auto;
+	transition: all .2s;
+}
+a.nav-btn:hover{
+    font-weight: 750;
+
+    padding: 6%;
+    background-color: rgb(213, 242, 242);
+    border-radius: 10px;
+    color:#543D25;
+}
+#opening{
+    width: 100%;
+    height: 100vh; 
+    
+    background-color: #543D25;
+    position: relative; 
+    margin: 0 0;
+
+    z-index: -1;
+
+    
+}
+h1{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 600;
+    font-size: 6.5em;
+    line-height: 1.4em;
+    margin-top: -1em;
+   
+}
+#opening h1{  
+    margin-top: 8%;
+    margin-bottom: 3%;
+    padding-left: 18%;
+    position: relative; /*makes text go on top of image-- remove from doc flow?? */ 
+    z-index: 2;
+    color: #FEFFE8;
+}
+#opening .background-image{
+    display: block;
+    margin: auto;
+    margin-top: -2.5em;
+    width: 90%;
+    position: absolute; /*position image behind content, removes from doc flow */  
+    top: 45%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+ 
+    z-index: 1; 
+}
+#def{
+    padding: 5% 10%; /* Centers text*/
+    text-align: left;
+    background-color: #FEFFE8;
+    font-size: 1.5em
+}
+#def p{
+    width: 75%;
+    line-height: 1.8em;
+    margin:auto;
+    color: #543D25; 
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 2%;
+    max-width: 1400px;
+    margin: 0% auto;
+}
+.teasers {
+    background-color:#F7FBFF;
+    color: #543D25;
+}
+.teasers ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3em; 
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 8%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.teasers li {
+    max-width: 95%;
+    text-align: left;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+}
+.teasers li img{
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center images */
+    width: 95%;
+    max-width: 600px;  
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(-100%) translateY(-40%);
+    }
+    25% {
+        transform: translateX(-55%) translateY(-60%);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+    75% {
+        transform: translateX(-45%) translateY(-60%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+@keyframes vanExit {
+    0% {
+        transform: translateX(-50%) translateY(-50%); 
+    }
+    100% {
+        transform: translateX(300%) translateY(-50%);
+    }
+}
+a.read-more {
+    display: inline-block;
+    position: relative;
+	margin-top: 5%;
+	padding: 0.6em 0.8em;
+    border-radius: 50px;
+    border: 2px solid #543D25;
+    color:#907913;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+	transition: all .2s ease;
+}
+a.read-more i { /*adjust icon?? */
+    font-size: 1.6em; 
+    display: block;
+    color: #c4a932;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    color: #c4a932;
+    opacity: 0; /*hide the icon before hover*/
+    transition: opacity 0.2s ease;
+}
+a.read-more:hover {
+    transform: scale(1.3); /* Slightly enlarge the button */
+    color: #ffffff; /* make text white = "disappear" */
+}
+a.read-more:hover i {
+    opacity: 1; /* Show the icon on hover */
+    transform: translate(-50%, -50%) scale(1.2);
+    animation: bounce 1.5s ease-in-out 3;
+}
+.end{
+    padding-top: -5%;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.home-end-image{
+    display: block;
+    margin: auto;
+    margin-top: -5%;
+    width: 100%;
+    border-radius: 90px 90px 0px 0px;
+    z-index: -1;
+}
+#hashtag{
+    font-family: "Annie Use Your Telescope", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 5.4em;
+    line-height: 1.15em;
+    color: #35210d;
+
+    position: absolute;
+    top: 15%;
+    right: 15%;  
+    z-index: 2;
+}
+footer{
+    position: relative;
+    margin: 0;
+    padding-top: 2%;
+    height:max-content;
+    background-color: #543D25;
+    color: #FEFFE8; 
+}
+.ul-footer{
+    display: grid;
+    columns: 1fr 1fr;
+    margin-left: -10;
+    margin-right: -10;
+}
+#copyright{
+    text-align: left;
+}
+#bylines{
+    text-align: right;
+    line-height: 1.8em;
+}
+
+@media (min-width:1390px)and (max-width: 1485px) {
+    #opening{
+        width: 100%;
+        height: 100vh; 
+        
+        background-color: #543D25;
+        position: relative; 
+        margin:0 0;
+    
+        z-index: -1;    
+    }
+    .opening-div{
+        margin-top: 3%;
+        padding-top:8%;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 5em;
+        line-height: 1.45em;
+        margin-top: 10em;
+    }
+    #opening .background-image{
+        margin-top: 4em; 
+        top: 40%;
+        height:65%;
+    }
+}
+@media (min-width:1024px)and (max-width: 1389px) {
+    #opening{
+        width: 100%;
+        height: 90%;  
+    }
+    .opening-div{
+        margin-top: 3%;
+        padding-top:2%;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 5em;
+        line-height: 1.45em;
+        margin-top: 5em;
+    }
+    #opening .background-image{
+        width: 82%;
+        margin-top: 2em; 
+        top: 40%;
+    }
+    .body-text{
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+    #hashtag{
+        font-family: "Annie Use Your Telescope", serif;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        font-size: 4em;
+        line-height: 1.2em;
+        color: #35210d;
+    
+        position: absolute;
+        top: 15%;
+        right: 10%;  
+        z-index: 2;
+    }
+}
+@media (min-width:820px)and (max-width: 1023px) {
+    #opening{
+        width: 100%;
+        height: 90%;  
+    }
+    .opening-div{
+        margin-top: 1%;
+        padding-top:1%;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 4em;
+        line-height: 1.45em;
+        margin-top: 2em;
+    }
+    #opening .background-image{
+        width: 82%;
+        margin-top: 2em; 
+        top: 40%;
+    }
+    .subtitle{
+        font-size: 2em;
+        line-height: 1.3em; 
+    }
+    .body-text{
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+    #hashtag{
+        font-size: 3em;
+        line-height: 1.3em;
+        right: 12%;  
+    }
+    #def{
+        padding: 5% 10%; /* Centers text*/
+        text-align: left;
+        background-color: #FEFFE8;
+        font-size: 1.35em
+    }
+}
+@media (max-width: 819px) {
+    #opening{
+        width: 100%;
+        height: 90%;  
+    }
+    .opening-div{
+        margin-top: 1%;
+        padding-top:1%;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 4em;
+        line-height: 1.45em;
+        margin-top: 2em;
+    }
+    #opening .background-image{
+        width: 82%;
+        margin-top: 2em; 
+        top: 40%;
+    }
+    .subtitle{
+        font-size: 2em;
+        line-height: 1.3em; 
+    }
+    .body-text{
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+    #hashtag{
+        font-size: 3em;
+        line-height: 1.3em;
+        right: 12%;  
+    }
+    #def{
+        padding: 5% 10%; /* Centers text*/
+        text-align: left;
+        background-color: #FEFFE8;
+        font-size: 1.35em
+    }
+    .teasers ul {
+        gap: 1.5em; 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 8%;
+        margin: 0 auto;
+    }
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 80%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding:0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 700px) {
+    #opening{
+        width: 100%;
+        height: 80%;  
+    }
+    .opening-div{
+        margin-top: 0%;
+        padding-top:0%;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 1.45em;
+        margin-top: 1em;
+    }
+    #opening .background-image{
+        width: 75%;
+        margin-top: 2em; 
+        top: 40%;
+    }
+    .subtitle{
+        font-size: 2em;
+        line-height: 1.3em; 
+    }
+    .body-text{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    #hashtag{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        right: 6%;  
+    }
+    #def{
+        font-size: 1.15em;
+        line-height: 0.7em;
+    }
+    .teasers ul {
+        gap: 1.5em; 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 8%;
+        margin: 0 auto;
+    }
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 80%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding:0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 575px) { /*CHANGES TO ONE COLUMN ----*/
+    h1 {
+        font-weight: 600;
+        font-size: 2.4em;
+        line-height: 1em;
+        margin-top: 0.2em;
+    }
+    #opening .background-image{
+        width: 95%;
+        margin-top: 2em; 
+        top: 30%;
+    }
+    #def{
+        font-size: 0.9em;
+        line-height: 0.6em;
+    }
+    .subtitle{
+        font-size: 1.5em;
+        line-height: 1.3em; 
+        text-align: center;
+    }
+    .body-text{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+    #hashtag{
+        font-size: 1.5em;
+        line-height: 1.3em;
+        right: 6%;  
+    }
+            /* !!!!!!!!!!!!!!!!!!!!!! CHANGES TO ONE COLUMN !!!!!!!!!!!!!!!!!!!!!!!! m----*/
+    .teasers ul li img {
+        display: none;
+    }
+    .teasers ul {
+        display: grid;
+        grid-template-columns:1fr; 
+        gap: 1.5em; 
+        list-style: none;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 8%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .teaser ul li{
+        text-align: center;
+        margin: 0% auto;
+        padding: 0%;
+    }
+    .teasers ul li img.show-mobile {
+        display: block;
+    }
+    .teaser li{
+        text-align: center;     /* won't align center ??? */ 
+    } 
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 80%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding:0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    a.read-more {
+        border-radius: 40px;
+        border: 1.5px solid #543D25;
+        color:#907913;
+        background-color: #ffffff;
+        text-decoration: none;
+        font-size: 01em;
+        transition: all .2s ease;
+        margin: 0 auto;
+        scale: 90%;
+    }
+    footer #copyright p{
+        font-size: 0.75em;
+    }
+    footer #bylines p{
+        font-size: 0.75em;
+    }
+}
+/*@media (max-width: 390px) {
+
+}*/
+

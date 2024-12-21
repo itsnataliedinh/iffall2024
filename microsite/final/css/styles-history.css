@@ -1,0 +1,470 @@
+html{
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+    max-width: 100%; /* !!! need to make sure all contents fit within max-width*/
+    margin: 0 auto; 
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+    body {
+        max-width: 1800px; 
+        margin: 0 auto;
+    }
+}
+main{
+    margin: 0 auto; /*how to align body in center?? left align rn */ 
+    margin-top: 6em; /*need to make scalable, responsive*/
+
+}
+h3{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+header{
+    display: block;
+    position: fixed; /*is there a way to make it fade out and fade in only during scroll? */ 
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 100%;
+    background-color:#c4a932;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    z-index: 1000;
+
+}
+header h3{
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+a#logo h3{
+    color: white;
+ }
+ a#logo h3:hover{
+     font-size: 210%;
+     color:rgb(224, 255, 255)
+ }
+.Navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 25%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    margin: auto auto;
+    color:#F7FBFF;
+    padding: 1.8% 0% 0% 0%;
+}
+.Navigation li{
+    text-align: left;
+    width: 100%;
+    padding:0px;
+}
+a.nav-btn{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15em;
+
+    display: inline-block;
+	position: relative;
+    padding: 2%;
+	margin:auto;
+	transition: all .2s;
+}
+a.nav-btn:hover{
+    font-weight: 750;
+
+    padding: 6%;
+    background-color: rgb(213, 242, 242);
+    border-radius: 10px;
+    color:#543D25;
+}
+section{
+    padding: 5% 5% 0% 5%;
+    margin: 0 auto;
+}
+img{
+    border-radius: 45px;
+    /* use min-width: 200px; to limit scale? responsive??*/
+}
+h1{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 600;
+    font-size: 4.8em;
+    line-height: 1.4em;
+    margin-top: 15%;
+    padding-top: 5%;
+    margin-bottom: -5%;
+}
+.year{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 0.4em;
+    color:#c4a932;
+}
+.subtitle{
+    font-family: "hobeaux", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1.2em; 
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 2%;
+    max-width: 1400px;
+    margin: 0 auto
+}
+.timeline {
+    background-color:#F7FBFF;
+    color: #543D25;
+    padding-top:0%;
+}
+.timeline-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 4em; 
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 15%;
+    margin: 0 auto;
+    margin-top: -5em;
+    max-width: 1400px;
+}
+.timeline li {
+    max-width: 100%;
+    padding-top: 10%;
+    text-align: left;
+}
+.timeline li img{
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center images */
+    padding-top: 2%;
+    width: 90%;
+    max-width: 600px;  
+}
+#add-frames{
+    border-width: 1px;
+    border-color: #543D25;
+}
+.timeline-line li:nth-child(odd){
+    border-left: 3px dashed #543D25; 
+    padding-left: 5%;
+}
+.page-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 15%;
+    margin: 0 auto;
+    margin-top: -5em;
+}
+footer{
+    position: relative;
+    margin: 0;
+    padding-top: 2%;
+    height:max-content;
+    background-color: #543D25;
+    color: #FEFFE8; 
+}
+.ul-footer{
+    display: grid;
+    columns: 1fr 1fr;
+    margin-left: -10;
+    margin-right: -10;
+}
+#copyright{
+    text-align: left;
+}
+#bylines{
+    text-align: right;
+    line-height: 1.8em;
+}
+
+
+@media (min-width:1390px)and (max-width: 1485px) {
+    h1 {
+        font-weight: 600;
+        font-size: 5em;
+        line-height: 1.45em;
+    }
+}
+@media (min-width:1024px)and (max-width: 1389px) {
+    h1 {
+        font-weight: 600;
+        font-size: 4em;
+        line-height: 1.45em;
+        margin-top: 5%;
+    }
+    .body-text{
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+@media (min-width:820px)and (max-width: 1023px) { /*CHANGES TO ONE COLUMN ----*/
+    h1 {
+        font-weight: 600;
+        font-size: 3.8em;
+        line-height: 1.45em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 2em;
+        line-height: 1.3em; 
+        text-align: center;
+    }
+    .year{
+        text-align: center;
+    }
+    .body-text{
+        font-size: 1.1em;
+        line-height: 1.4em;
+        text-align: center;
+    }
+    .timeline-line{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 1.5em; 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+        text-align: left;
+    }
+    .timeline-line li{
+        margin: 0% auto;
+        padding: 0%;
+    }
+    .page-title{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 2em; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    .page-title li{
+        margin-top:-10%;
+    }
+    .timeline-line li:nth-child(odd) border{
+        margin-bottom: -8%;
+    }
+    .timeline-line li:nth-child(even) border{
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+    }
+}
+@media (max-width: 819px) {
+    h1 {
+        font-weight: 600;
+        font-size: 3.2em;
+        line-height: 1.45em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .year{
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 2em;
+        line-height: 0.8em; 
+        text-align: center;
+    }
+    .body-text{
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: left;
+    }
+            /* !!!!!!!!!!!!!!!!!!!!!! CHANGES TO ONE COLUMN !!!!!!!!!!!!!!!!!!!!!!!! m----*/
+    .timeline-line{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 1.5em; 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+        text-align: left;
+    }
+    .timeline-line li{
+        text-align: left;
+        margin: 0% auto;
+        padding: 0%;
+    }
+    .page-title{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 2em; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    .page-title li{
+        margin-top:-10%;
+    }
+    .timeline-line li:nth-child(odd) border{
+        margin-bottom: -8%;
+    }
+    .timeline-line li:nth-child(even) border{
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+    }
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 85%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding: 0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media (max-width: 700px) {
+    h1 {
+        font-weight: 500;
+        font-size: 2.8em;
+        line-height: 1.3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    .year{
+        text-align: center;
+    }
+    .body-text{
+        font-size: 0.95em;
+        line-height: 1.4em;
+        text-align: center;
+    }
+    .timeline-line{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 1.5em; 
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 14%;
+        text-align: left;
+    }
+    .timeline-line li{
+        text-align: left;
+        margin: 0% auto;
+        padding: 0%;
+    }
+    .page-title{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 2em; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    .page-title li{
+        margin-top:-10%;
+    }
+    .timeline-line li:nth-child(odd) border{
+        margin-bottom: -8%;
+    }
+    .timeline-line li:nth-child(even) border{
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+    }
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 85%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding: 0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media (max-width: 405px) {  
+    h1 {
+        font-weight: 500;
+        font-size: 2.2em;
+        line-height: 1.5em;
+        margin-top: 1.2em;
+        margin-bottom: 1.8em;
+        text-align: center;
+    }
+    .body-text{
+        font-size: 0.75em;
+        line-height: 0.9em;
+    }
+    .year{
+        text-align: center;
+    }
+    .subtitle{
+        font-weight: 700px;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .timeline-line{
+        display: grid;
+        grid-template-columns: 1fr; 
+        list-style: none;
+        gap: 1.5em; 
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 14%;
+        text-align: left;
+    }
+ 
+    .Navigation{
+        display: grid;
+        grid-template-columns: 1fr;        
+        scale: 80%;
+    }
+    .Navigation li{
+        text-align: left;
+        width: 60%;
+        padding:0% 50% 2% 50%;
+    }
+    a.nav-btn{
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    footer #copyright p{
+        font-size: 0.75em;
+    }
+    footer #bylines p{
+        font-size: 0.75em;
+    }
+} 
+
+
